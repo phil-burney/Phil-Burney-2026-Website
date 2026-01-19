@@ -46,7 +46,7 @@
 
 .nav a {
   padding: 0.35rem 0.6rem;
-  border-radius: 999px;
+  border-radius: 8px;
   transition: background 0.2s ease, color 0.2s ease, transform 0.3s cubic-bezier(0.19, 0.5, 0.22, 0.5);
   position: relative;
   overflow: hidden;
@@ -57,37 +57,35 @@
 .nav a::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -150%;
-  right: -50%;
-  bottom: -50%;
-  width: 50%;
-  background: linear-gradient(90deg, #d21f3c 0%, #ffffff 50%, #0f2f67 100%);
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #b81c2e 0%, #b81c2e 20%, #ffffff 40%, #ffffff 60%, #0a47a8 80%, #0a47a8 100%);
   opacity: 0.4;
-  transform: skewX(45deg);
-  transition: left 0.5s cubic-bezier(0.19, 0.5, 0.22, 0.5);
   z-index: -1;
 }
 
 .nav a:hover::before {
   left: 200%;
+  transition: left 1s cubic-bezier(0.19, 0.5, 0.22, 0.5);
 }
 
 .nav a.cta {
-  background: var(--accent);
-  color: #fff;
+  background: rgba(245, 246, 251, 0.92);
+  color: var(--brand);
   padding: 0.45rem 1rem;
-  box-shadow: 0 10px 20px rgba(210, 31, 60, 0.2);
+  border: 2px solid var(--brand);
+  box-shadow: none;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
   mask-image: radial-gradient(circle, white, black);
 }
 
 .nav a.cta::before {
-  background: linear-gradient(90deg, #d21f3c 0%, #ffffff 50%, #0f2f67 100%);
+  background: linear-gradient(90deg, #b81c2e 0%, #b81c2e 20%, #ffffff 40%, #ffffff 60%, #0a47a8 80%, #0a47a8 100%);
   opacity: 0.5;
-  transform: skewX(45deg);
-  left: -150%;
-  width: 50%;
+  left: -100%;
+  width: 100%;
 }
 
 .nav a.cta:hover::before {
@@ -100,8 +98,8 @@
 }
 
 .nav a.cta:hover {
-  color: #fff;
-  box-shadow: 0 14px 28px rgba(210, 31, 60, 0.35);
+  color: var(--brand);
+  box-shadow: 0 8px 20px rgba(15, 47, 103, 0.2);
 }
 
 .socials {
@@ -114,7 +112,7 @@
 
 .socials a {
   padding: 0.35rem 0.6rem;
-  border-radius: 999px;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: #fff;
   font-size: 0.85rem;
@@ -128,19 +126,18 @@
 .socials a::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -150%;
-  right: -50%;
-  bottom: -50%;
-  background: linear-gradient(90deg, #d21f3c 0%, #ffffff 50%, #0f2f67 100%);
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #b81c2e 0%, #b81c2e 20%, #ffffff 40%, #ffffff 60%, #0a47a8 80%, #0a47a8 100%);
   opacity: 0.35;
-  transform: skewX(45deg);
-  transition: left 0.5s cubic-bezier(0.19, 0.5, 0.22, 0.5);
   z-index: 0;
 }
 
 .socials a:hover::before {
   left: 150%;
+  transition: left 1s cubic-bezier(0.19, 0.5, 0.22, 0.5);
 }
 
 .socials a:hover {
