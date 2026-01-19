@@ -1,24 +1,26 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+---
+
 <footer class="site-footer">
-  <div class="footer-grid">
-    <div>
-      <p class="footer-title">Phil Burney</p>
-      <p class="muted">Rutherford County Commissioner · District 5</p>
-      <p class="tag">A new way forward</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/website_logo_white.svg" alt="Phil Burney Campaign Logo" class="footer-logo" />
     </div>
-    <div>
-      <p class="footer-title">Get Involved</p>
-      <p class="muted">Volunteer and sign up for updates.</p>
-      <button class="btn btn-outline">Join the Campaign</button>
+    
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/platform">Platform</a>
+      <a href="/donations">Donate</a>
     </div>
-    <div>
-      <p class="footer-title">Contact</p>
-      <p class="muted">123 Placeholder St, Rutherford County, TN</p>
-      <p class="muted">(555) 123-4567</p>
-      <p class="muted">info@philburney.com</p>
+
+    <div class="footer-social">
+      <SocialLinks />
     </div>
   </div>
-  <p class="fine-print muted">Paid for by Friends of Phil Burney · Placeholder disclaimer text</p>
+  
+  <div class="footer-bottom">
+    <p>Paid for by Friends of Phil Burney</p>
+    <p>Contact: info@philburney.com</p>
+  </div>
 </footer>
-
-
-

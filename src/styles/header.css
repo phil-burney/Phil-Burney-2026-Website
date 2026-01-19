@@ -1,29 +1,32 @@
 .site-header {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1.6fr 1fr 1fr;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem 6vw;
+  padding: 1rem 6vw;
   position: sticky;
   top: 0;
   background: rgba(245, 246, 251, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
+  min-height: 100px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  position: relative;
 }
 
 .brand img {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: #fff;
+  width: 210px;
+  height: 210px;
+  border-radius: 20px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 .candidate {
