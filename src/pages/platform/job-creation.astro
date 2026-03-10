@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Job Creation | Phil Burney for Commissioner"
+  description="Phil Burney's platform on job creation and economic development for Rutherford County District 5."
+>
+  <section class="section platform-hero">
+    <p class="tag">Platform</p>
+    <h1>Job Creation</h1>
+    <blockquote class="platform-quote">
+      "Rutherford County has real strengths, but we face serious economic challenges. Our
+      young people are leaving because too few opportunities exist here. Many small businesses
+      never get off the ground or fail before truly blossoming because they lack affordable
+      space and the support needed to succeed. That has to change."
+    </blockquote>
+    <a href="/platform" class="btn btn-outline back-link">← All Platform Issues</a>
+  </section>
+
+  <section class="section platform-stack">
+    <article class="card">
+      <h2>Partner with the Chamber of Commerce</h2>
+      <p class="muted">
+        Our local Chamber of Commerce is one of the most underutilized resources available
+        to Rutherford County business owners. Phil will work to strengthen that partnership
+        and make sure every small business owner knows what support is available to them.
+      </p>
+      <ul>
+        <li>Connect business owners to state and federal grant programs</li>
+        <li>Provide access to business coaching and financial planning resources</li>
+        <li>Reduce barriers to starting and growing a business in Rutherford County</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Revitalize Our Downtowns</h2>
+      <p class="muted">
+        Rutherford County has too many empty storefronts and deteriorating commercial
+        buildings holding our downtowns back. Phil will work with our cities and towns to
+        pursue funding that puts those properties back into productive use.
+      </p>
+      <ul>
+        <li>Pursue state and federal grants to buy and renovate vacant commercial properties</li>
+        <li>Partner with local governments to identify priority buildings in each downtown</li>
+        <li>Create move-in-ready spaces that lower the cost of starting a business</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Buy Rutherford Campaign</h2>
+      <p class="muted">
+        Too many residents don't know what Rutherford County has to offer. Phil will work
+        with the Tourism Development Authority to launch a "Buy Rutherford" campaign that
+        promotes our local restaurants, shops, and entertainment to the people who live
+        here first.
+      </p>
+      <ul>
+        <li>Partner with the Tourism Development Authority on a resident-focused marketing effort</li>
+        <li>Highlight local dining, entertainment, and retail across county platforms</li>
+        <li>Drive foot traffic to downtown businesses and encourage locals to shop local</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Help shape the agenda</h2>
+      <p>Phil wants to hear from business owners and workers across District 5.</p>
+      <div class="cta-actions">
+        <a href="/donations" class="btn btn-primary">Support the Campaign</a>
+        <a href="/platform" class="btn btn-outline-light">View All Issues</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .platform-hero {
+    padding-top: 3rem;
+    max-width: 820px;
+  }
+
+  .platform-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--brand);
+    margin: 0.5rem 0 1.25rem;
+  }
+
+  .platform-quote {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--brand);
+    border-left: 4px solid var(--accent);
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.25rem;
+    background: rgba(15, 47, 103, 0.04);
+    border-radius: 0 0.35rem 0.35rem 0;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    max-width: 680px;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .back-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+  }
+</style>

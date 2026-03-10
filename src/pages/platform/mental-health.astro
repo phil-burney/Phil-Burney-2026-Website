@@ -1,0 +1,116 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Mental Health | Phil Burney for Commissioner"
+  description="Phil Burney's platform on mental health services for Rutherford County District 5."
+>
+  <section class="section platform-hero">
+    <p class="tag">Platform</p>
+    <h1>Mental Health</h1>
+    <blockquote class="platform-quote">
+      "It is no secret that Rutherford County is in the midst of a mental health crisis.
+      Too few providers and inadequate facilities leave people cycling through emergency
+      rooms and courtrooms instead of getting the care they need."
+    </blockquote>
+    <a href="/platform" class="btn btn-outline back-link">← All Platform Issues</a>
+  </section>
+
+  <section class="section platform-stack">
+    <article class="card">
+      <h2>A Long-Term Mental Health Facility</h2>
+      <p class="muted">
+        Rutherford County has no long-term mental health facility of its own. Residents in
+        crisis are sent hours away or cycled repeatedly through the emergency room with no
+        real treatment plan. Phil will advocate for a county-supported long-term facility
+        by pooling existing county resources and pursuing state and federal funding to make
+        it a reality.
+      </p>
+      <ul>
+        <li>Partner with nonprofits to identify funding and suitable locations for a long-term care facility</li>
+        <li>Identify and consolidate existing county mental health resources</li>
+        <li>Pursue state and federal grants to fund construction and operations</li>
+        <li>Reduce reliance on emergency rooms as the default mental health response</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Recruit and Retain Mental Health Workers</h2>
+      <p class="muted">
+        You cannot build a mental health system without mental health workers. Rutherford
+        County struggles to attract and keep qualified providers. Phil will work to create
+        incentives that make our county a place mental health professionals want to build
+        a career.
+      </p>
+      <ul>
+        <li>Partner with nonprofits to pursue funding that supports provider recruitment and retention</li>
+        <li>Partner with Isothermal Community College to develop local training pipelines</li>
+        <li>Work with NC Care Network and Unite Us to coordinate provider resources across the county</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Establish a Re-Entry Council</h2>
+      <p class="muted">
+        People leaving incarceration return to our community with little support and high
+        odds of cycling back into the system. Without addressing the root causes that put
+        them there in the first place, nothing changes. A coordinated re-entry council would
+        bring together county agencies, nonprofits, and employers to give returning citizens
+        a real pathway to stability and break the cycle of recidivism for good.
+      </p>
+      <ul>
+        <li>Convene a county-wide re-entry council with representation from key agencies</li>
+        <li>Connect returning citizens to housing, employment, and mental health services</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Help shape the agenda</h2>
+      <p>Phil wants to hear from mental health professionals and families in District 5.</p>
+      <div class="cta-actions">
+        <a href="/donations" class="btn btn-primary">Support the Campaign</a>
+        <a href="/platform" class="btn btn-outline-light">View All Issues</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .platform-hero {
+    padding-top: 3rem;
+    max-width: 820px;
+  }
+
+  .platform-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--brand);
+    margin: 0.5rem 0 1.25rem;
+  }
+
+  .platform-quote {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--brand);
+    border-left: 4px solid var(--accent);
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.25rem;
+    background: rgba(15, 47, 103, 0.04);
+    border-radius: 0 0.35rem 0.35rem 0;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    max-width: 680px;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .back-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+  }
+</style>
