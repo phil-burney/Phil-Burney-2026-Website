@@ -1,0 +1,135 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Housing | Phil Burney for Commissioner"
+  description="Phil Burney's platform on housing for Rutherford County District 5."
+>
+  <section class="section platform-hero">
+    <p class="tag">Platform</p>
+    <h1>Housing</h1>
+    <blockquote class="platform-quote">
+      "We are dealing with a housing crisis in the county that spans multiple fronts. A lack of affordable housing,
+      a shortage of rental and residential properties, combined with a homeless crisis, demands solutions that reduce
+      red tape, shorten build times, and make housing available to every resident."
+    </blockquote>
+    <a href="/platform" class="btn btn-outline back-link">← All Platform Issues</a>
+  </section>
+
+  <section class="section platform-stack">
+    <article class="card">
+      <h2>Streamline the Planning &amp; Permitting Process</h2>
+      <p class="muted">
+        Slow, unpredictable permitting drives up costs and discourages the kind of
+        smaller-scale development that produces attainable housing. The planning board
+        process should be clear, consistent, and efficient - without cutting corners on
+        community input.
+      </p>
+      <ul>
+        <li>Advocate for a more streamlined, predictable process with the planning board</li>
+        <li>Identify and remove unnecessary permitting delays and redundancies</li>
+        <li>Work with nonprofits to reduce zoning and land acquisition barriers for affordable housing projects</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Smarter Zoning Where Infrastructure Already Exists</h2>
+      <p class="muted">
+        In areas already served by water and sewer, large minimum lot sizes add cost
+        without adding value. Allowing more housing units on existing infrastructure
+        is one of the most straightforward ways to increase supply without expanding
+        the county's service footprint.
+      </p>
+      <ul>
+        <li>Reduce minimum lot sizes in areas with existing water and sewer capacity</li>
+        <li>Prioritize infill development over sprawl into unserved areas</li>
+        <li>Review and update zoning maps to reflect current infrastructure realities</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Mixed-Income &amp; Mixed-Use Development</h2>
+      <p class="muted">
+        Single-use, single-income developments leave communities more fragile and less
+        walkable. Encouraging mixed-income and mixed-use projects creates neighborhoods
+        where people at different income levels can live and work in the same place.
+      </p>
+      <ul>
+        <li>Advocate for and incentivize mixed-income housing in planned developments</li>
+        <li>Support mixed-use zoning that combines residential and commercial uses</li>
+        <li>Require infrastructure capacity before plat approval to ensure growth is sustainable</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Reduce Barriers to ADUs</h2>
+      <p class="muted">
+        Accessory dwelling units - backyard cottages, garage apartments, in-law suites -
+        are one of the lowest-cost ways to add housing without changing neighborhood
+        character. Most counties make them harder to build than they need to be.
+      </p>
+      <ul>
+        <li>Reduce regulatory and permitting barriers to ADU construction</li>
+        <li>Allow ADUs by right in areas with existing water and sewer service</li>
+        <li>Promote ADUs as a tool for multigenerational housing and supplemental income</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>A Homeless Shelter for Rutherford County</h2>
+      <p class="muted">
+        Rutherford County has no homeless shelter. Residents in crisis have nowhere local
+        to turn, and the gap falls hardest on the most vulnerable. The county can't solve
+        this alone - but it can be a committed partner to the nonprofits working toward
+        a solution.
+      </p>
+      <ul>
+        <li>Work with local and regional nonprofits to bring a homeless shelter to the county</li>
+        <li>Help navigate land acquisition, permitting, and zoning barriers that slow nonprofit housing efforts</li>
+        <li>Connect shelter efforts to broader housing stability and re-entry services</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Help shape the agenda</h2>
+      <p>Phil wants to hear from renters, homeowners, and neighbors across District 5.</p>
+      <div class="cta-actions">
+        <a href="/donations" class="btn btn-primary">Support the Campaign</a>
+        <a href="/platform" class="btn btn-outline-light">View All Issues</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .platform-hero {
+    padding-top: 3rem;
+    max-width: 820px;
+  }
+
+  .platform-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--brand);
+    margin: 0.5rem 0 1.25rem;
+  }
+
+  .platform-quote {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--brand);
+    border-left: 4px solid var(--accent);
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.25rem;
+    background: rgba(15, 47, 103, 0.04);
+    border-radius: 0 0.35rem 0.35rem 0;
+  }
+
+  .back-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+  }
+</style>
