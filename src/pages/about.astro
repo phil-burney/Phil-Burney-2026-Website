@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="About Phil Burney | Phil Burney for Commissioner"
+  description="Learn about Phil Burney, candidate for Rutherford County Commissioner, District 5."
+>
+  <section class="section about-hero">
+    <p class="tag">About</p>
+    <h1>About Phil Burney</h1>
+    <p class="muted lead">
+      A lifelong Rutherford County resident running to bring honest, practical leadership to District 5.
+    </p>
+  </section>
+
+  <section class="section about-section">
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="/placeholder-headshot.svg" alt="Phil Burney" />
+      </div>
+      <div class="about-content">
+        <h2>About Myself</h2>
+        <p class="muted">
+          [Phil's personal background — career, family, how long he's been in Rutherford County, community involvement, etc.]
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-section alt">
+    <h2>Why I'm Running</h2>
+    <p class="muted">
+      [What motivated Phil to run — the moment, issue, or frustration that pushed him to get involved.]
+    </p>
+  </section>
+
+  <section class="section about-section">
+    <h2>Why I'm the Best Choice</h2>
+    <p class="muted">
+      [Phil's qualifications, professional skills, track record, and what sets him apart as a candidate for County Commissioner.]
+    </p>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Ready to support Phil?</h2>
+      <p>Help bring results-focused leadership to Rutherford County District 5.</p>
+      <div class="cta-actions">
+        <a href="/donations" class="btn btn-primary">Support the Campaign</a>
+        <a href="/platform" class="btn btn-outline-light">Read the Platform</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about-hero {
+    padding-top: 3rem;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--brand);
+    margin: 0.5rem 0 1rem;
+  }
+
+  .lead {
+    font-size: 1.15rem;
+    max-width: 680px;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .about-section {
+    max-width: 800px;
+  }
+
+  .about-section h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--brand);
+    margin-bottom: 1rem;
+  }
+
+  .about-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .about-section.alt {
+    background: #fff;
+    max-width: 100%;
+    margin-left: -6vw;
+    margin-right: -6vw;
+    padding: 3rem 6vw;
+  }
+
+  .about-section.alt h2,
+  .about-section.alt p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .about-photo img {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-photo {
+      max-width: 240px;
+    }
+  }
+</style>

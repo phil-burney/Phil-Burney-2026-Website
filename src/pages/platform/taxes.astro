@@ -9,41 +9,43 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   <section class="section platform-hero">
     <p class="tag">Platform</p>
     <h1>Taxes &amp; Fiscal Policy</h1>
-    <p class="muted lead">
-      Your tax dollars belong to you. Phil will fight for a county budget that is
-      transparent, disciplined, and focused on services that residents actually use —
-      not bloated administration and backroom spending.
-    </p>
+    <blockquote class="platform-quote">
+      "Currently, it feels like too much of the tax burden is put on property owners relative to what they are getting in return.  
+      Encouraging responsible spending from each department, adding more grant-writing capacity, and budget transparency will help
+      county dollars stretch farther while giving residents peace of mind that their tax dollars are being spent responsibly and 
+      transparently." 
+    </blockquote>
     <a href="/platform" class="btn btn-outline back-link">← All Platform Issues</a>
   </section>
 
   <section class="section platform-stack">
+
     <article class="card">
-      <h2>Property Tax Fairness</h2>
+      <h2>Revenue-Neutral Property Tax Rate</h2>
       <p class="muted">
-        Rutherford County homeowners are shouldering a growing share of the tax burden.
-        Phil believes that growth should pay for growth — meaning new development must
-        bring the infrastructure funding it requires rather than pushing costs onto
-        existing residents.
+        A countywide property value reassessment is coming — and that means many
+        homeowners will see their assessed values change significantly. Phil commits to
+        keeping property tax collections revenue-neutral, adjusted for inflation. If your
+        property value goes up on paper, your tax bill should not spike as a result.
+        The reassessment process must be fair, transparent, and accompanied by a clear
+        rate adjustment that protects existing residents.
       </p>
       <ul>
-        <li>Require developer impact fees that reflect true infrastructure costs</li>
-        <li>Oppose unfunded mandates that force property tax increases</li>
-        <li>Review and reform tax incentive deals that benefit large corporations at residents' expense</li>
+        <li>Set the post-reassessment tax rate to keep overall collections inflation-adjusted and revenue-neutral</li>
+        <li>Publish a plain-language explanation of how the reassessment affects individual tax bills</li>
+        <li>Protect long-term homeowners — especially seniors on fixed incomes — from reassessment-driven displacement</li>
       </ul>
     </article>
 
     <article class="card">
       <h2>Budget Transparency</h2>
       <p class="muted">
-        Residents deserve to know exactly where their money goes. Phil will push for
-        open, readable budgets published online — not buried in PDF files no one can
-        navigate.
+        The money that Rutherford County uses to fund county operations is our money. Taxpayers
+        deserve to know exactly how that money is spent.
       </p>
       <ul>
-        <li>Publish a plain-language county budget summary each year</li>
-        <li>Post all contracts and expenditures above $10,000 online</li>
-        <li>Hold regular town halls on budget priorities before votes are taken</li>
+        <li>Require the county to publish a plain-language budget summary each year</li>
+        <li>Publish all county budgets from the past ten years on the Rutherford County website</li>
       </ul>
     </article>
 
@@ -55,23 +57,37 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         and cuts what doesn't work.
       </p>
       <ul>
-        <li>Require annual performance reviews for county departments</li>
         <li>Eliminate redundant programs and administrative overlap</li>
         <li>Benchmark county costs against comparable North Carolina counties</li>
       </ul>
     </article>
 
     <article class="card">
-      <h2>Fiscal Reserves &amp; Long-Term Planning</h2>
+      <h2>Capturing Grant Dollars for Rutherford County</h2>
       <p class="muted">
-        Good government plans ahead. Phil will advocate for maintaining healthy reserves,
-        avoiding debt-financed operating expenses, and building a long-term capital plan
-        that keeps taxes predictable.
+        Rutherford County has a significant advantage for grant opportunities relative to many other North Carolina
+        counties, as both a Tier 1 county and an Appalachian region county. Unfortunately, we are not fully
+        capitalizing on these opportunities. Hiring a dedicated grant writer will ensure we are capturing
+        every grant opportunity available.
+      </p>
+      <ul>
+        <li>Hire a dedicated full-time grant writer to actively pursue federal, state, and foundation funding</li>
+        <li>Partner with every county department to identify grant-eligible projects and needs</li>
+        <li>Track and publicly report grant applications submitted, awards received, and dollars secured</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Fiscal Responsibility</h2>
+      <p class="muted">
+        We need to maintain healthy reserve funds,
+        avoid debt where possible, and make sure that we are utilizing existing resources
+        to their fullest potential before making capital expenditures to
+        fund new projects.
       </p>
       <ul>
         <li>Maintain county reserve funds at or above state-recommended levels</li>
-        <li>Require multi-year fiscal projections with every major spending commitment</li>
-        <li>Oppose using one-time funds for recurring expenses</li>
+        <li>Audit existing county assets and resources before approving new capital expenditures</li>
       </ul>
     </article>
   </section>
@@ -87,28 +103,3 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     </div>
   </section>
 </BaseLayout>
-
-<style>
-  .platform-hero {
-    padding-top: 3rem;
-  }
-
-  .platform-hero h1 {
-    font-size: clamp(2.4rem, 5vw, 3.5rem);
-    font-weight: 800;
-    color: var(--brand);
-    margin: 0.5rem 0 1rem;
-  }
-
-  .lead {
-    font-size: 1.15rem;
-    max-width: 680px;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-  }
-
-  .back-link {
-    font-size: 0.9rem;
-    padding: 0.5rem 1.1rem;
-  }
-</style>
