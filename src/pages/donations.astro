@@ -3,53 +3,135 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Donate | Phil Burney">
-  <section class="section hero">
-    <div>
-      <p class="tag">Support the campaign</p>
-      <h1 class="title">Fuel the movement in District 5</h1>
-      <p class="muted">
-        Your contribution powers outreach, community events, and voter engagement across Rutherford County.
-      </p>
-      <div class="donation-actions">
-        <button class="btn btn-primary">$25</button>
-        <button class="btn btn-primary">$50</button>
-        <button class="btn btn-primary">$100</button>
-        <button class="btn btn-outline">Other</button>
-      </div>
-    </div>
-    <img src="/placeholder-hero.svg" alt="Donation hero placeholder" />
+
+  <section class="section donate-hero">
+    <p class="tag">Support the Campaign</p>
+    <h1>Help Us Win District 5</h1>
+    <p class="lead muted">
+      Every dollar goes directly toward reaching voters and building a campaign that Rutherford County can be proud of.
+    </p>
+    <a
+      href="https://secure.actblue.com/donate/phil-burney-1"
+      class="btn btn-primary donate-cta"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Donate via ActBlue
+    </a>
   </section>
 
-  <section class="section grid grid-2">
-    <article class="card">
-      <h2>Donation Form Placeholder</h2>
-      <p class="muted">
-        Add your payment processor form here. Include required contribution notices and compliance details.
-      </p>
-      <div class="form-placeholder">
-        <p class="muted">[Secure payment form goes here]</p>
-      </div>
-    </article>
-    <article class="card">
-      <h2>Where your support goes</h2>
-      <p class="muted">Every dollar helps reach more voters and build a stronger District 5.</p>
+  <section class="section donate-cards">
+    <div class="donate-card">
+      <div class="donate-card-icon">$</div>
+      <h2>Where Your Money Goes</h2>
+      <p>Every dollar goes directly toward reaching voters and making the case for change in District 5.</p>
       <ul>
         <li>Door-to-door outreach materials</li>
-        <li>Community events and town halls</li>
-        <li>Digital ads and voter guides</li>
+        <li>Community mailers</li>
+        <li>Advertisements</li>
         <li>Volunteer training and supplies</li>
       </ul>
-    </article>
+    </div>
+
+    <div class="donate-card">
+      <div class="donate-card-icon">✉</div>
+      <h2>Give by Check</h2>
+      <p>Prefer to send a check? Make it payable to:</p>
+      <p class="payable-to">Phil Burney For County Commissioner</p>
+      <p class="check-note">Mail to: 1812 US 64 HWY, Rutherfordton, NC 28139</p>
+      <p class="check-note">Please include your name, address, occupation, and employer.</p>
+    </div>
   </section>
 
-  <section class="section card">
-    <h2 class="section-title">Prefer to give by check?</h2>
-    <p class="muted">
-      Mail contributions to: Friends of Phil Burney, 123 Placeholder St, Rutherford County, NC.
-    </p>
-    <p class="muted">Please include your name, address, occupation, and employer.</p>
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Ready to make a difference?</h2>
+      <p>No contribution is too small. Every dollar moves us closer to a stronger District 5.</p>
+      <div class="cta-actions">
+        <a href="https://secure.actblue.com/donate/phil-burney-1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Donate Now</a>
+        <a href="/platform" class="btn btn-outline-light">Read the Platform</a>
+      </div>
+    </div>
   </section>
+
 </BaseLayout>
 
+<style>
+  .donate-hero {
+    padding-top: 3rem;
+    max-width: 720px;
+  }
 
+  .donate-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--brand);
+    margin: 0.5rem 0 1rem;
+  }
 
+  .lead {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+
+  .donate-cta {
+    font-size: 1.05rem;
+    padding: 1rem 2rem;
+  }
+
+  .donate-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+  }
+
+  .donate-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+
+  .donate-card-icon {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .donate-card h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--brand);
+    margin-bottom: 0.75rem;
+  }
+
+  .donate-card p {
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .donate-card ul {
+    margin-top: 0.5rem;
+  }
+
+  .payable-to {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--brand) !important;
+    background: rgba(15, 47, 103, 0.06);
+    border-left: 3px solid var(--brand);
+    padding: 0.6rem 1rem;
+    border-radius: 0 0.35rem 0.35rem 0;
+    margin: 0.5rem 0 1rem !important;
+  }
+
+  .check-note {
+    font-size: 0.95rem;
+  }
+</style>

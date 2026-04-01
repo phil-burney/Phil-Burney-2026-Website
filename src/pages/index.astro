@@ -3,51 +3,35 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Phil Burney for Commissioner | Home">
-  <!-- Full-width Hero with Background Image -->
+  <!-- Full-width Hero -->
   <section class="landing-hero">
+    <div class="landing-hero-bg" id="hero-bg"></div>
     <div class="landing-hero-overlay"></div>
-    <img src="/placeholder-hero-bg.svg" alt="" class="landing-hero-bg" />
     <div class="landing-hero-content">
-      <p class="landing-tag">District 5 · Rutherford County</p>
+
       <h1 class="landing-headline">A new way forward.</h1>
       <p class="landing-subhead">Phil Burney for County Commissioner</p>
+      <p class="landing-tag">District 5 · Rutherford County</p>
     </div>
   </section>
 
-  <!-- Join / Signup Section -->
-  <section class="join-section">
-    <div class="join-inner">
-      <h2 class="join-title">Join the movement for District 5</h2>
-      <p class="join-text">
-        Sign up to receive updates, volunteer opportunities, and ways to support the campaign.
-      </p>
-      <form class="join-form">
-        <input type="email" placeholder="Email Address" class="join-input" />
-        <input type="text" placeholder="Zip Code" class="join-input join-input-small" />
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-      </form>
-    </div>
-  </section>
+  <script>
+    const bg = document.getElementById('hero-bg');
+    window.addEventListener('scroll', () => {
+      bg.style.transform = `translateY(${window.scrollY * 0.4}px)`;
+    }, { passive: true });
+  </script>
 
   <!-- Meet Phil Section -->
   <section class="section meet-section">
-    <div class="meet-grid">
-      <div class="meet-photo">
-        <img src="/placeholder-headshot.svg" alt="Phil Burney" />
-      </div>
-      <div class="meet-content">
-        <h2 class="section-title">Meet Phil Burney</h2>
-        <p>
-          Small business advocate committed
-          to transparent governance, strong infrastructure, and practical solutions.
-        </p>
-        <p class="muted">
-          Community-first leadership focused on safe neighborhoods, smart growth,
-          and accountable local government.
-        </p>
-        <a href="/platform" class="btn btn-outline">Read the Platform</a>
-      </div>
-    </div>
+    <h2 class="section-title">Meet Phil Burney</h2>
+    <p>
+      I've been a lifelong resident of WNC. I grew up in neighboring Polk County, and I've always loved living here. The scenery, the people, and the deep sense of community that living here brings have always kept me coming back.
+    </p>
+    <p>
+      After graduating from NC State with a degree in Computer Science, I found a remote job and bought a home in Rutherford County. I've lived here ever since, and the more I've lived here, the more I believe we can make this an even better place to live, work, and play.
+    </p>
+    <a href="/about" class="btn btn-outline">Learn More About Phil</a>
   </section>
 
   <!-- CTA Section -->
@@ -62,3 +46,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .meet-section {
+    max-width: 800px;
+  }
+
+  .meet-section h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  .meet-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .meet-section .btn {
+    margin-top: 0.5rem;
+  }
+</style>
