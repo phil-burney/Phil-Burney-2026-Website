@@ -108,20 +108,48 @@
 
 @media (max-width: 960px) {
   .site-header {
-    grid-template-columns: 1fr;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: unset;
+    gap: 0.5rem;
+    padding: 0.4rem 4vw;
   }
 
   .brand {
-    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .brand img {
+    width: 78px;
+    height: 78px;
+    border-radius: 8px;
+    display: block;
   }
 
   .nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+  }
+
+  .nav a {
+    padding: 0.3rem 0.4rem;
+    white-space: nowrap;
+  }
+
+  .nav a.cta {
+    padding: 0.3rem 0.6rem;
   }
 
   .socials {
-    justify-content: center;
-    flex-wrap: wrap;
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav a[href="/platform"] {
+    display: none;
   }
 }
