@@ -8,37 +8,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <section class="section about-hero">
     <p class="tag">About</p>
-    <h1>About Phil Burney</h1>
+    <h1>About Me</h1>
     <p class="muted lead">
-      A lifelong Rutherford County resident running to bring honest, practical leadership to District 5.
+      I've lived here all my life, and believe a community as great as this one deserves a
+      government that works for them.
     </p>
   </section>
 
   <section class="section about-section">
-    <div class="about-grid">
-      <div class="about-photo">
-        <img src="/placeholder-headshot.svg" alt="Phil Burney" />
-      </div>
-      <div class="about-content">
-        <h2>About Myself</h2>
-        <p class="muted">
-          [Phil's personal background — career, family, how long he's been in Rutherford County, community involvement, etc.]
-        </p>
-      </div>
-    </div>
+    <h2>My Story</h2>
+    <p>
+      I've been a lifelong resident of WNC. I grew up in neighboring Polk County, and I have always loved living here. The scenery, the people, and the deep sense of community that living here brings have always kept me coming back.
+    </p>
+    <p>
+      After I graduated high school, I went to NC State, where I graduated at the top of my class with a Bachelor's Degree in Computer Science. I didn't see myself living in a city — I wanted to move back to the place I called home my whole life. After a bit of effort, I found a remote job and bought a home in Rutherford County soon after. I've lived here ever since, and the more I've lived here, the more I believe that we can make this an even better place to live, work, and play.
+    </p>
   </section>
 
-  <section class="section about-section alt">
+  <section class="section about-section">
     <h2>Why I'm Running</h2>
-    <p class="muted">
-      [What motivated Phil to run — the moment, issue, or frustration that pushed him to get involved.]
-    </p>
+    <p>
+      I’m running because we have so many opportunities to improve the place that we all call home, 
+      and we are leaving too many of those opportunities on the table.  I want to ensure that we are
+      bringing every possible opportunity to the county, whether that be for housing, jobs, or education.      </p>
   </section>
 
   <section class="section about-section">
-    <h2>Why I'm the Best Choice</h2>
-    <p class="muted">
-      [Phil's qualifications, professional skills, track record, and what sets him apart as a candidate for County Commissioner.]
+    <h2>Why I Can Do the Job</h2>
+    <p>
+      I believe that my passion for this county, and my problem-solving skillset makes me the best 
+      pick for County Commissioner. We need a leader in government who will listen to and advocate for the 
+      people they serve while seeking solutions to the problems we all face.
     </p>
   </section>
 
@@ -57,6 +57,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <style>
   .about-hero {
     padding-top: 3rem;
+    text-align: center;
+    align-items: center;
   }
 
   .about-hero h1 {
@@ -69,7 +71,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .lead {
     font-size: 1.15rem;
     max-width: 680px;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
     line-height: 1.7;
   }
 
@@ -87,43 +89,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .about-section p {
     font-size: 1.05rem;
     line-height: 1.8;
+    margin-bottom: 1rem;
   }
 
-  .about-section.alt {
-    background: #fff;
-    max-width: 100%;
-    margin-left: -6vw;
-    margin-right: -6vw;
-    padding: 3rem 6vw;
-  }
-
-  .about-section.alt h2,
-  .about-section.alt p {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .about-grid {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 3rem;
-    align-items: start;
-  }
-
-  .about-photo img {
-    width: 100%;
-    border-radius: 0.5rem;
-    display: block;
-  }
-
-  @media (max-width: 640px) {
-    .about-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .about-photo {
-      max-width: 240px;
-    }
+  .about-section p:last-child {
+    margin-bottom: 0;
   }
 </style>

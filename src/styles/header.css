@@ -3,7 +3,7 @@
   grid-template-columns: 1.6fr 1fr 1fr;
   align-items: center;
   gap: 1.5rem;
-  padding: 1rem 6vw;
+  padding: 0 6vw;
   position: sticky;
   top: 0;
   background: rgba(255, 210, 0, 0.96);
